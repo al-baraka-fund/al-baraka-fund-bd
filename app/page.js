@@ -1,13 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../supabase';
 
 export default function Home() {
   const [funds, setFunds] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // এখানে পরবর্তীতে ডাটা লোড করার কোড যুক্ত করা হবে
     setLoading(false);
   }, []);
 
